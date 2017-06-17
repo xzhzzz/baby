@@ -1,0 +1,112 @@
+.personal{
+    font-size: 0.2rem;
+    height:7rem;
+    background: #f3f3f3;
+    .header{
+        width: 100%;height:1.2rem;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF5D00), to(#FF7E00));
+        .user_photo{
+            position: absolute;left:0.4rem;top:0.3rem;
+            img{width: 0.6rem;height: 0.6rem;border-radius:50%;}
+        }
+        .user_text{
+            position: absolute;right: 0.3rem;top:0.45rem;
+            color:white;
+            #dtName{font-size: 0.14rem;}
+            span{font-size: 0.12rem;padding-right: 0.2rem;}
+        }
+    }
+    .menu{
+        background: white;
+        margin-top: 0.3rem;
+        box-shadow: 0px 5px 5px #888888;
+        p{color:#82737A;height:0.5rem;line-height: 0.5rem;font-size: 0.14rem;padding-left:0.15rem;border-bottom: 1px solid #f3f3f3;}
+        p:before{font-size: 0.2rem;padding-right: 0.1rem;}
+        ul{
+            display:flex;
+            padding-top: 0.15rem;
+            li{
+                flex:1;text-align: center;font-size: 0.12rem;padding-bottom:0.15rem;
+                a{color:#82737A;font-size: 0.12rem;}
+                dt{padding-bottom: 0.05rem;}
+            }
+        }
+    }
+    .menu_list{
+        background: white;
+        margin-top:0.3rem;
+        box-shadow: 0px 5px 5px #888888;
+        ul{
+            li{
+                padding: 0.1rem;
+                border-bottom: 1px solid #f3f3f3;
+                span{font-size: 0.12rem;color:#82737A;}
+                span:before{padding-right: 0.1rem;}
+            }
+        }
+    }
+
+
+    .out{
+        background: white;
+        text-align: center;
+        a{height: 50px;line-height: 50px;font-size: 0.14rem;color:#82737A;}        
+    }
+
+  
+}
+.footer {
+    width:100%;
+    height: 0.48rem;
+      ul{
+        width:100%;
+        position:fixed;
+        bottom:0;
+        left:0;
+        border-top:1px solid #ccc;
+        background:#fff;
+        z-index: 1;
+        padding:0.03rem 0;
+        .home{
+          float:left;
+          width:25%;
+          span:first-child{
+            display: block;
+            width:0.25rem;
+            height:0.25rem;
+            background:url('../../static/imgs/m-icon1.png') no-repeat;
+            background-size: 100%;
+            margin:0 auto;
+          }
+          span:last-child{
+            display: block;
+            font-size:0.12rem;
+            color:#666;
+            text-align: center;
+          }
+        }
+        .classify{
+          @extend .home;
+          span:first-child{
+            background:url('../../static/imgs/index/m-icon2.png') no-repeat;
+            background-size: 100%;
+          }
+        }
+        .car{
+          @extend .home;
+          span:first-child{
+            background:url('../../static/imgs/index/m-icon3.png') no-repeat;
+            background-size: 100%;
+          }
+        }
+        .user{
+          @extend .home;
+          span:first-child{
+            background:url('../../static/imgs/m-icon4-1.png') no-repeat;
+            background-size: 100%;
+          }
+          span:last-child{
+              color:#f60;
+          }
+        }
+      }
+  }

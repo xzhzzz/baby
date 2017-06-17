@@ -1,0 +1,35 @@
+
+#container{
+
+    .header{
+        height:0.44rem;
+        background:#f60;
+       
+        .backPrev{
+           font-size: 0.3rem;
+           color:#fff;
+            padding: 0.06rem 0.13rem 0 ;
+        }
+        .title{
+            display: inline-block;
+            width:80%;
+            text-align: center;
+            color:#fff;
+            font-size: 0.17rem;
+            vertical-align: bottom;
+            margin-bottom: 0.03rem;
+        }
+    }
+    .main{
+        width:100%;
+        .weal_Msg{
+            a{
+                img{
+                    width:3.2rem;
+                    height:5.18rem;
+                }
+            }
+        }
+    }
+   
+}

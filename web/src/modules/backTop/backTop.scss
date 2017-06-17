@@ -1,0 +1,24 @@
+.back_btn{
+    width:0.36rem;
+    position:fixed;
+    bottom: 0.5rem;
+    right:0.15rem;
+    .backIndex{
+
+        a{
+            display: block;
+            width:0.36rem;
+            height:0.36rem;
+            color:#fff;
+            font-size: 0.25rem;
+            border-radius: 50%;
+            background:#f60;
+            text-align: center;
+            line-height: 0.36rem;
+        }
+    }
+    .backTop{
+       margin:0.05rem 0;
+       @extend .backIndex;
+    }
+}

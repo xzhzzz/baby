@@ -1,0 +1,129 @@
+.header{
+	top: 0;
+    height: 60px;
+    background: #426374 url(../../static/imgs/logo.png) no-repeat 0 center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+}
+.main{
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: #3283AC url(../../static/imgs/admin-login-bg.jpg) no-repeat center;
+    >ul{
+    	position: absolute;
+	    width: 617px;
+	    height: 330px;
+	    background: url(../../static/imgs/admin-loginform-bg.png) no-repeat;
+	    left: 50%;
+	    top: 50%;
+	    margin-left: -309px;
+	    margin-top: -184px;
+	    padding-top: 38px;
+	    >li{
+	    	width: 100%;
+	    	margin-top: 20px;
+    	    display: block;
+    	    height: 38px;
+    	    // margin-left: -15px;
+			// margin-right: -15px;
+	    	.shiliang1,.shiliang2{
+	    		display: block;
+				text-align: right;
+				width: 25%;
+				color: #555;
+				height: 38px;
+				line-height: 38px;
+			    float: left;
+			    margin-top: 3px;
+			    cursor: text;
+		        min-height: 1px;
+			    position: relative;
+			    padding-left: 15px;
+			    padding-right: 15px;
+			    box-sizing: border-box;
+				>i{
+				    font-size: 24px;
+				}
+	    	}
+	    	.useinput,.psd{
+    		    position: relative;
+	            width: 360px;
+	            font-size: 16px;
+			    height: 41px;
+			    padding: 8px;
+			    box-sizing: border-box;
+    			border: solid 1px #ddd;
+    			float: left;
+	    	}
+	    }
+	    .dli{
+    	    position: relative;
+    	    margin-left: 25%;
+    	    width: 66.66666667%;
+	        float: left;
+	        .denglu{
+	        	padding: 8px 16px;
+	        	font-size: 16px;
+    			height: 41px;
+    			border-radius: 5px;
+    			color: #fff;
+			    background-color: #5eb95e;
+			    border-color: #5eb95e;
+			    display: inline-block;
+			    box-sizing: border-box;
+			    cursor: pointer;
+			    text-align: center;
+			    font-weight: 400;
+			    margin-right: 5px;
+			    &:hover{
+			    	color: #fff;
+				    background-color: #429842;
+				    border-color: #429842;
+			    }
+	        }
+	        .quxiao{
+	        	padding: 8px 16px;
+	        	font-size: 16px;
+    			height: 41px;
+			    border-radius: 5px;
+			    background-color: #e6e6e6;
+    			border-color: #e6e6e6;
+    			display: inline-block;
+			    box-sizing: border-box;
+			    cursor: pointer;
+			    text-align: center;
+			    font-weight: 400;
+				&:hover{
+			    	color: #333;
+				    background-color: #c7c7c7;
+				    border-color: #c7c7c7;
+			    }			    
+	        }
+	    }
+    }
+}
+.footer{
+	height: 46px;
+    line-height: 46px;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: #426374;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+    border-top: 1px solid #e8e8e8;
+    padding: 15px 0;
+    font-family: tahoma,Arial;
+}

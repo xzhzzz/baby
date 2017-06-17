@@ -1,0 +1,64 @@
+
+//main.........
+    .main{
+        width:100%;
+        .clearance_Info{
+            width:100%;
+            background:#fff;
+            ul{
+                li{
+                    float:left;
+                    width:50%;
+                    padding:0.1rem;
+                    
+                    a{
+                        img{
+                            width:1.45rem;
+                            height:1.45rem;
+                        }
+                    }
+                    .clearance_name{
+                        font-size: 0.13rem;
+                        -webkit-line-clamp: 2;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        word-break: break-all;
+                        display: -webkit-box;
+                    }
+                    .clearance_sale{
+                        font-size: 0.13rem;
+                        color:orange;
+                        margin:0.1rem 0;
+                    }
+                    .clearance_buy{
+                        display: block;
+                        width:100%;
+                        span:first-child{
+                            float:left;
+                            font-size: 0.13rem;
+                            display: block;
+                            width:50%;
+                            height:0.35rem;
+                            color:#fff;
+                            text-align: center;
+                            line-height: 0.35rem;
+                            background:#FF85AC;
+                        }
+                        span:last-child{
+                            display: block;
+                            font-size: 0.13rem;
+                            float:left;
+                            width:50%;
+                            height:0.35rem;
+                            color:#fff;
+                            text-align: center;
+                            line-height: 0.35rem;
+                            background:#e7507b;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }

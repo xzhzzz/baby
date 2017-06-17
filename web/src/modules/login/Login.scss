@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+
+
+@import '../../static/styles/font_tn7zjeerdvxwdn29/iconfont.css';
+
+.login{
+    font-size: 0.20rem;
+    a{text-decoration: none;color:#fea060;}
+    .header{
+        width: 100%;
+        height: 0.6rem;
+        a{font-size: 0.3rem;padding: 0.2rem;}
+    }
+    ul{
+        li{
+            text-align: center;
+            margin-top: 0.3rem;
+            input{border: none;outline:medium;border-bottom: 1px solid #ffb480;width: 70%;height: 0.5rem;}
+            input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #ccc;}
+            .btn_login{border:none;height: 0.3rem;border-radius:0.2rem;background: #ffb480;color:white;}
+            a:first-child{font-size: 0.12rem;float: left;padding-left: 0.5rem;}
+            a:last-child{font-size: 0.12rem;float: right;padding-right: 0.5rem;}
+        }
+    }
+}

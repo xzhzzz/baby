@@ -1,0 +1,14 @@
+.addressAdd{
+    ul{
+        padding-top: 0.7rem;
+        background: white;
+        li{
+            text-align: center;
+            margin-top: 0.2rem;
+            input{border: none;outline:medium;border-bottom: 1px solid #ffb480;width: 70%;height: 0.3rem;}
+            input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #ccc;}
+            .preserve{border:none;height: 0.3rem;border-radius:0.2rem;background: #f60;color:white;}
+        }
+        li:last-child{input{margin-top: 0.5rem;}}
+    }
+}
