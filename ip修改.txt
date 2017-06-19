@@ -1,0 +1,10 @@
+没有设置baseUrl文件，所以需要手动修改ip
+
+
+api\package.json	scripts{start : --host ip}
+web\package.json	scripts{start : --host ip}
+
+api\src\utils\HttpClient.js LOCAL_SERVER = 'http://ip:7000'
+web\src\utils\HttpClient.js LOCAL_SERVER = 'http://ip:7000'	
+
+

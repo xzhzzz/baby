@@ -15,7 +15,7 @@ export default function(
         case types.SUCCESS:
  
             reState.data = action.body
-            console.log(reState.data.length)
+            // console.log(reState.data.length)
             reState.lastFetched = action.lastFetched
             reState.loading = false
             break

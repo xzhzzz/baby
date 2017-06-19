@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import SpinnerComponent from './../spinner/SpinnerComponent'
+import LazyLoad from 'react-lazyload';
 import './Diaper.scss';
 import './../../static/common/rem';
 import '../../static/libs/font-awesome-4.7.0/css/font-awesome.min.css'
@@ -85,7 +86,9 @@ class DiaperComponent extends Component {
                                 return <div>
                                         <div className="title_logo">
                                             <a href="javascript:;">
+                                                <LazyLoad>
                                                 <img  src={`src/static/imgs/index/${item.titleImg}`} alt="" id={item.titleId}/>
+                                            </LazyLoad>
                                             </a>
                                         </div>
                                         <div className="goods_Info">
@@ -96,7 +99,9 @@ class DiaperComponent extends Component {
                                                 
                                                return <li>
                                                                 <a href="javascript:;">
+                                                                   <LazyLoad>
                                                                     <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                </LazyLoad>
                                                                 </a>
                                                                 <p className="goods_name">{item.goodsText}</p>
                                                                 <p className="goods_price">{item.goodsPrice}</p>
@@ -113,7 +118,9 @@ class DiaperComponent extends Component {
                                 return <div>
                                         <div className="title_logo">
                                             <a href="javascript:;">
+                                            <LazyLoad>
                                                 <img  src={`src/static/imgs/index/${item.titleImg}`} alt="" id={item.titleId}/>
+                                            </LazyLoad>
                                             </a>
                                         </div>
                                         <div className="goods_Info">
@@ -124,7 +131,9 @@ class DiaperComponent extends Component {
                                                 
                                                return <li>
                                                                 <a href="javascript:;">
+                                                                    <LazyLoad>
                                                                     <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                </LazyLoad>
                                                                 </a>
                                                                 <p className="goods_name">{item.goodsText}</p>
                                                                 <p className="goods_price">{item.goodsPrice}</p>
@@ -141,7 +150,9 @@ class DiaperComponent extends Component {
                                 return <div>
                                         <div className="title_logo">
                                             <a href="javascript:;">
+                                               <LazyLoad>
                                                 <img  src={`src/static/imgs/index/${item.titleImg}`} alt="" id={item.titleId}/>
+                                            </LazyLoad>
                                             </a>
                                         </div>
                                         <div className="goods_Info">
@@ -152,7 +163,9 @@ class DiaperComponent extends Component {
                                                 
                                                return <li>
                                                                 <a href="javascript:;">
+                                                                    <LazyLoad>
                                                                     <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                </LazyLoad>
                                                                 </a>
                                                                 <p className="goods_name">{item.goodsText}</p>
                                                                 <p className="goods_price">{item.goodsPrice}</p>
@@ -169,7 +182,9 @@ class DiaperComponent extends Component {
                                 return <div>
                                         <div className="title_logo">
                                             <a href="javascript:;">
+                                              <LazyLoad>
                                                 <img  src={`src/static/imgs/index/${item.titleImg}`} alt="" id={item.titleId}/>
+                                            </LazyLoad>
                                             </a>
                                         </div>
                                         <div className="goods_Info">
@@ -180,7 +195,9 @@ class DiaperComponent extends Component {
                                                 
                                                return <li>
                                                                 <a href="javascript:;">
+                                                                <LazyLoad>
                                                                     <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                </LazyLoad>    
                                                                 </a>
                                                                 <p className="goods_name">{item.goodsText}</p>
                                                                 <p className="goods_price">{item.goodsPrice}</p>

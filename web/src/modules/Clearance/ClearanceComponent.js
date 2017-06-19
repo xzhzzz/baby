@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import SpinnerComponent from './../spinner/SpinnerComponent'
+import LazyLoad from 'react-lazyload';
 import './Clearance.scss';
 import './../../static/common/rem';
 import '../../static/libs/font-awesome-4.7.0/css/font-awesome.min.css'
@@ -64,7 +65,9 @@ class ClearanceComponent extends Component {
                                 return <div>
                                             <div className="title_logo">
                                                 <a href="javascript:;">
+                                                <LazyLoad>
                                                     <img  src={`src/static/imgs/index/${item}`} alt="" />
+                                                </LazyLoad>
                                                 </a>
                                             </div>
                                             <div className="clearance_Info">
@@ -73,7 +76,9 @@ class ClearanceComponent extends Component {
                                                     (sale||[]).map((item)=>{
                                                         return <li>
                                                                     <a href="javascript:;">
+                                                                        <LazyLoad>
                                                                         <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                    </LazyLoad>
                                                                     </a>
                                                                     <p className="clearance_name">
                                                                         {item.goodsText}
@@ -94,7 +99,9 @@ class ClearanceComponent extends Component {
                                 return <div>
                                             <div className="title_logo">
                                                 <a href="javascript:;">
+                                                   <LazyLoad>
                                                     <img  src={`src/static/imgs/index/${item}`} alt="" />
+                                                </LazyLoad>
                                                 </a>
                                             </div>
                                             <div className="clearance_Info">
@@ -103,7 +110,9 @@ class ClearanceComponent extends Component {
                                                     (milk||[]).map((item)=>{
                                                         return <li>
                                                                     <a href="javascript:;">
+                                                                        <LazyLoad>
                                                                         <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                    </LazyLoad>
                                                                     </a>
                                                                     <p className="clearance_name">
                                                                         {item.goodsText}
@@ -124,7 +133,9 @@ class ClearanceComponent extends Component {
                                 return <div>
                                             <div className="title_logo">
                                                 <a href="javascript:;">
+                                                    <LazyLoad>
                                                     <img  src={`src/static/imgs/index/${item}`} alt="" />
+                                                </LazyLoad>
                                                 </a>
                                             </div>
                                             <div className="clearance_Info">
@@ -133,7 +144,9 @@ class ClearanceComponent extends Component {
                                                     (clean||[]).map((item)=>{
                                                         return <li>
                                                                     <a href="javascript:;">
+                                                                        <LazyLoad>
                                                                         <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                    </LazyLoad>
                                                                     </a>
                                                                     <p className="clearance_name">
                                                                         {item.goodsText}
@@ -154,7 +167,9 @@ class ClearanceComponent extends Component {
                                 return <div>
                                             <div className="title_logo">
                                                 <a href="javascript:;">
+                                                    <LazyLoad>
                                                     <img  src={`src/static/imgs/index/${item}`} alt="" />
+                                                </LazyLoad>
                                                 </a>
                                             </div>
                                             <div className="clearance_Info">
@@ -163,7 +178,9 @@ class ClearanceComponent extends Component {
                                                     (feed||[]).map((item)=>{
                                                         return <li>
                                                                     <a href="javascript:;">
+                                                                        <LazyLoad>
                                                                         <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                    </LazyLoad>
                                                                     </a>
                                                                     <p className="clearance_name">
                                                                         {item.goodsText}
@@ -184,7 +201,9 @@ class ClearanceComponent extends Component {
                                 return <div>
                                             <div className="title_logo">
                                                 <a href="javascript:;">
+                                                    <LazyLoad>
                                                     <img  src={`src/static/imgs/index/${item}`} alt="" />
+                                                </LazyLoad>
                                                 </a>
                                             </div>
                                             <div className="clearance_Info">
@@ -193,7 +212,9 @@ class ClearanceComponent extends Component {
                                                     (safety||[]).map((item)=>{
                                                         return <li>
                                                                     <a href="javascript:;">
+                                                                        <LazyLoad>
                                                                         <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                    </LazyLoad>
                                                                     </a>
                                                                     <p className="clearance_name">
                                                                         {item.goodsText}
@@ -214,7 +235,9 @@ class ClearanceComponent extends Component {
                                 return <div>
                                             <div className="title_logo">
                                                 <a href="javascript:;">
+                                                    <LazyLoad>
                                                     <img  src={`src/static/imgs/index/${item}`} alt="" />
+                                                </LazyLoad>
                                                 </a>
                                             </div>
                                             <div className="clearance_Info">
@@ -223,7 +246,9 @@ class ClearanceComponent extends Component {
                                                     (tool||[]).map((item)=>{
                                                         return <li>
                                                                     <a href="javascript:;">
+                                                                    <LazyLoad>
                                                                         <img src={`src/static/imgs/index/${item.goodsImg}`} alt="" />
+                                                                    </LazyLoad>
                                                                     </a>
                                                                     <p className="clearance_name">
                                                                         {item.goodsText}

@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import * as appAction from './AppAction'
 import Slider from './Slider/Slider';
 import SpinnerComponent from '../spinner/SpinnerComponent'
+import LazyLoad from 'react-lazyload';
 import './App.scss';
 import './../../static/common/rem';
 import './../../static/libs/font-awesome-4.7.0/css/font-awesome.min.css'
@@ -225,7 +226,9 @@ class AppComponent extends Component{
                                         return <li>
                                                 <div className="img_info">
                                                     <a href="#">
-                                                        <img src={`src/static/imgs/index/${item.imgInfo}`} alt="" />
+                                                        <LazyLoad>
+                                                            <img src={`src/static/imgs/index/${item.imgInfo}`} alt="" />
+                                                        </LazyLoad>
                                                     </a>
                                                     <div className="SurplusTime">
                                                         <span></span>
@@ -260,7 +263,9 @@ class AppComponent extends Component{
                                         return <li>
                                             <div className="img_info">
                                                 <a href="#">
+                                                <LazyLoad>
                                                     <img src={`src/static/imgs/index/${item.imgInfo}`} alt="" />
+                                                </LazyLoad>
                                                 </a>
                                                 <div className="SurplusTime">
                                                     <span></span>
@@ -293,20 +298,26 @@ class AppComponent extends Component{
                                                     <div className="clearfix">
                                                         <div className="img_left">
                                                         <a href="#">
-                                                                <img src={`src/static/imgs/index/${item.imgInfo[0]}`}alt="" />
+                                                            <LazyLoad>
+                                                                    <img src={`src/static/imgs/index/${item.imgInfo[0]}`}alt="" />
+                                                            </LazyLoad>
                                                         </a>
                                                         <span>{item.priceInfo[0]}</span>
                                                         </div>
                                                         <div className="img_right">
                                                             <div>
                                                                 <a href="#">
-                                                                    <img src={`src/static/imgs/index/${item.imgInfo[1]}`} alt="" />
+                                                                    <LazyLoad>
+                                                                        <img src={`src/static/imgs/index/${item.imgInfo[1]}`} alt="" />
+                                                                    </LazyLoad>
                                                                 </a>
                                                                 <span>{item.priceInfo[1]}</span>
                                                             </div>
                                                             <div> 
                                                                 <a href="#">
-                                                                    <img src={`src/static/imgs/index/${item.imgInfo[2]}`} alt="" />
+                                                                    <LazyLoad>
+                                                                        <img src={`src/static/imgs/index/${item.imgInfo[2]}`} alt="" />
+                                                                    </LazyLoad>
                                                                 </a>
                                                                 <span>{item.priceInfo[2]}</span>
                                                             </div>                       

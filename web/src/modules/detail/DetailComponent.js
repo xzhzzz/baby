@@ -3,6 +3,7 @@ import React,{Component} from 'react'
 import {connect} from 'react-redux'
 import * as detailActions from './DetailAction'
 import Slider from '../app/Slider/Slider';
+import LazyLoad from 'react-lazyload';
 import './Detail.scss'
 
 
@@ -40,6 +41,7 @@ class DetailComponent extends React.Component{
     }
 
     render(){
+        console.log(this.props,123)
         //数据生成信息
         let price,name,agioTitle,produce,specification,parameter,imgFooter,imgUrl,IMAGE_DATA = []
         if (this.props.detailInfo != undefined&&this.props.detailInfo.length>0){
@@ -106,9 +108,13 @@ class DetailComponent extends React.Component{
                     <div>商品参数和使用指南</div>
                     {parameter}
                 </div>
-                <div className="show_imgFooter">
-                    {imgFooter}
-                </div>
+                
+                <LazyLoad height={200}>
+                    <div className="show_imgFooter">
+                         {imgFooter}
+                    </div>
+                </LazyLoad>
+
                 <div className="to_car">
                     <ul>
                         <li><Link to="shopCar"><i className="iconfont icon-gouwuche"></i></Link></li>
